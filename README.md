@@ -40,5 +40,14 @@ PrivateKey = ""
 4.注释log初始化
 5.启动
 2>
+
 1.先部署oracle合约
 2.再部署调用合约 合约完整的返回请求值 不做处理或者做处理后解决。
+
+3>调试
+remix 
+remixd -s /Users/houzi/remix/ --remix-ide https://remix.ethereum.org
+
+4>ide问题
+Cannot identify version of git executable: no response – on startup
+删除缓存重启
