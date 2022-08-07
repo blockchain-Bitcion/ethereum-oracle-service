@@ -38,15 +38,15 @@ Options:
 	flag.PrintDefaults()
 }
 
-func setLog() {
-	logs.NewLogger(10000)
-	if err := logs.SetLogger(logs.AdapterFile, `{"filename":"`+logPath+`/project.log","level":7,"daily":true,"maxdays":30}`); err != nil {
-		panic("Failed to set log")
-	}
-	logs.SetLevel(7)
-	logs.EnableFuncCallDepth(true)
-	logs.Async()
-}
+//func setLog() {
+//	logs.NewLogger(10000)
+//	if err := logs.SetLogger(logs.AdapterFile, `{"filename":"`+logPath+`/project.log","level":7,"daily":true,"maxdays":30}`); err != nil {
+//		panic("Failed to set log")
+//	}
+//	logs.SetLevel(7)
+//	logs.EnableFuncCallDepth(true)
+//	logs.Async()
+//}
 
 func setConfig() {
 	if err := beego.LoadAppConfig("ini", configPath); err != nil {
@@ -71,7 +71,7 @@ func main() {
 	setConfig()
 
 	// init log
-	setLog()
+	//setLog()
 
 	watch, err := core.NewEventWatch(conf.GetAppConfig())
 	if err != nil {
