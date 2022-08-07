@@ -51,3 +51,15 @@ remixd -s /Users/houzi/remix/ --remix-ide https://remix.ethereum.org
 4>ide问题
 Cannot identify version of git executable: no response – on startup
 删除缓存重启
+
+币价api>
+https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR,JPY
+https://docs.chain.link/docs/chainlink-framework/
+https://docs.moonbeam.network/cn/builders/integrations/oracles/chainlink/
+其他hardhat相关
+https://web03.cn/blog/268;jsessionid=C6859206B874278F659C82BD570E65DA
+合约余额
+https://hardhat.org/tutorial/testing-contracts
+
+原文链接
+https://learnblockchain.cn/article/1162#%E4%B8%89%E3%80%81%E6%8A%BD%E5%A5%96%E5%90%88%E7%BA%A6
